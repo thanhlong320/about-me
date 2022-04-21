@@ -137,6 +137,7 @@ body {
   transform: translate(-50%, -50%);
   z-index: -1;
   padding: 125px 70px;
+  border-radius: 10px;
 }
 
 .content-details.appear {
@@ -180,7 +181,7 @@ body {
 }
 
 .content-details .header {
-  border-bottom: 3px solid white;
+  border-bottom: 2px solid white;
   display: inline-block;
   padding-bottom: 5px;
   margin-bottom: 50px;
@@ -190,15 +191,26 @@ body {
   text-align: justify;
 }
 
-.skils-img img {width: 100%;padding: 20px 50px;transition: 1s;}
+.skils-img img {
+  width: 100%;
+  padding: 20px 50px;
+  transition: 1s;
+}
 
-.skils-img img:hover {transform: scale(1.2);}
+.skils-img img:hover {
+  transform: scale(1.2);
+}
 
-.skils-img {margin-top: 50px;}
+.skils-img {
+  margin-top: 50px;
+}
 
-.interview-group {overflow: auto;height: 85%;}
+.interview-group {
+  overflow: auto;
+  height: 85%;
+}
 
- .interview-group p {
+.interview-group p {
   margin: 0;
   word-break: break-word;
   font-size: 1.1rem;
@@ -223,18 +235,8 @@ body {
   padding-left: 30px;
 }
 .interview-group .project p:nth-child(1) {
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
   position: relative;
-}
-.interview-group .project p:nth-child(1)::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background: white;
-  position: absolute;
-  top: 22px;
-  left: 0;
-  transform: rotate(45deg);
 }
 
 /*# sourceMappingURL=style.css.map */
@@ -244,9 +246,32 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: white
+  background-color: white;
 }
 
 ::-webkit-scrollbar-thumb {
   box-shadow: inset 0 0 6px rgb(255, 103, 103);
+}
+
+div#contact .contact-details .icon i {
+  font-size: 50px;
+  text-align: center;
+  display: block;
+}
+
+div#contact .contact-details .title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+div#contact .contact-details .information p {
+  text-align: center;
+  display: block;
+}
+.information {
+  margin-top: 30px;
+}
+
+.contact-details {
+  margin-top: 60px;
 }
